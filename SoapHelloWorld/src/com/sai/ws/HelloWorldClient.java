@@ -16,7 +16,7 @@ public class HelloWorldClient {
 
 	    Service service = Service.create(url, qname);
 
-	    HelloWorld hello = service.getPort(HelloWorld.class);
+	    HelloWorldService hello = service.getPort(HelloWorldService.class);
 
 	    System.out.println(hello.getHelloWorldAsString("Sai"));
 	}
